@@ -1,0 +1,125 @@
+.fcontainer{
+    border: 2px solid grey;
+    height: 45vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; space-evenly; space-between */
+    /* justify-content: center; -Center horizontal */
+    /* align-items: center; - Align items verticaly center
+    align-items: flex-end;
+    align-items: flex-start; */
+    /* flex-wrap: wrap; - responsive screens card go down without shrink */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column wrap; */
+    
+    
+}
+
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin:12px;
+    width: 122px;
+    height: 122px;
+}
+
+.item1{
+    order: 3;/* which element have big order go to last */
+    /* flex-grow: 3; - by default flex-grow:1 if we increases value flex div increases*/
+    /* flex-shrink: 2; - when we are decreasing the screen size this div first shrink*/
+    align-self: center; /* it created his own roles*/
+}
+
+.item4{
+    order: 4;
+    /* flex-grow: 2; */
+}
+
+.container {
+    background-color: brown;
+    height: 50vh;
+    width: 50vh;
+    display: grid ;
+    /* grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px; */
+    grid-template-columns: repeat(3, 1fr);/* 1 fraction of width available */
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.item {
+   background-color: cadetblue;
+   height: 50px;
+   width: 50px;
+}
+
+.item-one {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 3;
+    width: 100%;
+    /* justify-self: center; */
+}
+
+.item-two {
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center;
+}
+
+.header {
+ /* float: right; */
+ text-align: right;
+}
+
+/* container */
+/* .btn-container {
+    text-align: center;
+} */
+
+.btn-container {
+    border: 2px solid #000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn1 {
+    display: block;
+    margin: auto;
+}
+
+.btn2 {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn3 {
+    float: right;
+}
+
+.block {
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.b {
+    border: 10px solid red;;
+}
+.a {
+    border: 2px solid red;;
+ }
+
+.event-div {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 30px;
+    border: 1px solid #000;
+}
